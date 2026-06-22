@@ -1,0 +1,20 @@
+DATA QUALITY SUMMARY
+
+Project: Mutual Fund Analytics
+
+Files Analysed:
+- HDFC_Top100.csv
+- SBI_Bluechip.csv
+- ICICI_Bluechip.csv
+- Nippon_LargeCap.csv
+- Axis_Bluechip.csv
+- Kotak_Bluechip.csv
+
+Observations:
+- No missing values found.
+- No duplicate records found.
+- NAV data successfully downloaded from MFAPI.
+- Date and NAV columns available in all files.
+
+Conclusion:
+The dataset is clean and ready for exploratory data analysis (EDA), visualization, and further processing.
