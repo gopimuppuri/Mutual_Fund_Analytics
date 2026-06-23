@@ -1,20 +1,30 @@
+==================================================
 DATA QUALITY SUMMARY
+==================================================
 
-Project: Mutual Fund Analytics
+Total Fund Master Records: 40
+Total NAV History Records: 46000
 
-Files Analysed:
-- HDFC_Top100.csv
-- SBI_Bluechip.csv
-- ICICI_Bluechip.csv
-- Nippon_LargeCap.csv
-- Axis_Bluechip.csv
-- Kotak_Bluechip.csv
+Fund Houses: 10
+Categories: 2
+Sub Categories: 12
+Risk Categories: 5
 
-Observations:
-- No missing values found.
-- No duplicate records found.
-- NAV data successfully downloaded from MFAPI.
-- Date and NAV columns available in all files.
+Missing Values:
+No significant missing values found.
 
-Conclusion:
-The dataset is clean and ready for exploratory data analysis (EDA), visualization, and further processing.
+Duplicate Records:
+0 duplicate records detected.
+
+AMFI Code Validation:
+Total Fund Master Codes: 40
+Total NAV Codes: 40
+Missing Codes: 0
+
+Result:
+All AMFI codes in fund_master are present in nav_history.
+Dataset is clean and ready for Exploratory Data Analysis (EDA).
+
+==================================================
+Day 1 Status: COMPLETED
+==================================================
