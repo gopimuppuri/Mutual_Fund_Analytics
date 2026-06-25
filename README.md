@@ -30,3 +30,35 @@ https://api.mfapi.in
 ## Author
 
 Gopi
+
+# Day 2 Deliverables
+
+## Database
+
+* bluestock_mf.db
+* schema.sql
+
+## Documentation
+
+* data_dictionary.md
+* data_quality_summary.txt
+
+## SQL Analysis
+
+* queries.sql
+* 10 query result screenshots
+
+## Tables
+
+* dim_fund
+* fact_nav
+* fact_transactions
+* fact_performance
+
+## Query Results Location
+
+reports/query results/
+
+## Status
+
+Day 2 Completed Successfully
