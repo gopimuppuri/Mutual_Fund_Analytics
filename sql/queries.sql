@@ -1,34 +1,40 @@
 
 SELECT * FROM dim_fund;
-
 SELECT * FROM fact_nav;
+SELECT * FROM fact_performance;
+SELECT * FROM fact_transactions;
+SELECT * FROM dim_date;
+SELECT * FROM fact_aum;
 
+
+SELECT COUNT(*) FROM dim_date;
+SELECT COUNT(*) FROM fact_aum;
+SELECT COUNT(*) FROM fact_transactions;
+SELECT COUNT(*) FROM fact_performance;
+SELECT COUNT(*) FROM fact_nav;
 SELECT COUNT(*) FROM dim_fund;
 
-SELECT COUNT(*) FROM fact_nav;
 
-SELECT COUNT(*) FROM fact_transactions;
 
-SELECT COUNT(*) FROM fact_performance;
 
 
 -- 1. Top 5 Funds by AUM
 SELECT scheme_name, aum_crore
 FROM fact_performance
 ORDER BY aum_crore DESC
-LIMIT 5;
+LIMIT 5 ;
 
 -- 2.Average NAV Per Month
 
-SELECT strftime('%Y-%m', date) AS month,
+SELECT strftime ('%Y-%m', date) AS month,
     ROUND(AVG(nav),2) AS avg_nav
 FROM fact_nav
 GROUP BY month
 ORDER BY month;
 
-
+ 
 -- 3.SIP Inflow YoY Growth
-SELECT strftime('%Y', transaction_date) AS year,
+SELECT strftime ('%Y', transaction_date) AS year,
     SUM(amount_inr) AS sip_inflow
 FROM fact_transactions
 WHERE transaction_type='SIP'
@@ -74,3 +80,6 @@ GROUP BY category;
 -- 10. Maximum NAV
 SELECT MAX(nav)
 FROM fact_nav;
+
+
+

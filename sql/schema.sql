@@ -3,7 +3,17 @@ CREATE TABLE dim_fund (
     fund_house TEXT,
     scheme_name TEXT,
     category TEXT,
-    risk_category TEXT
+    sub_category TEXT,
+    plan TEXT,
+    launch_date DATE,
+    benchmark TEXT,
+    expense_ratio_pct REAL,
+    exit_load_pct REAL,
+    min_sip_amount REAL,
+    min_lumpsum_amount REAL,
+    fund_manager TEXT,
+    risk_category TEXT,
+    sebi_category_code TEXT
 );
 
 CREATE TABLE fact_nav (
@@ -51,6 +61,8 @@ CREATE TABLE fact_performance (
     expense_ratio_pct REAL,
     morningstar_rating INTEGER,
     risk_grade TEXT,
+    anomaly_flag BOOLEAN,
+    expense_ratio_valid BOOLEAN,
     FOREIGN KEY (amfi_code) REFERENCES dim_fund(amfi_code)
 );
 
@@ -64,8 +76,10 @@ CREATE TABLE dim_date (
 
 
 CREATE TABLE fact_aum (
-    amfi_code TEXT,
     date DATE,
+    fund_house TEXT,
+    aum_lakh_crore REAL,
     aum_crore REAL,
-    FOREIGN KEY (amfi_code) REFERENCES dim_fund(amfi_code)
+    num_schemes INTEGER
 );
+
