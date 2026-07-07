@@ -75,6 +75,7 @@ CREATE TABLE dim_date (
 );
 
 
+
 CREATE TABLE fact_aum (
     date DATE,
     fund_house TEXT,
@@ -104,5 +105,5 @@ CREATE TABLE fact_sip_industry (
     yoy_growth_pct REAL
 );
 
-PRAGMA table_info(fact_sip_industry);
+
 
