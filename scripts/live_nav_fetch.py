@@ -14,6 +14,7 @@ funds = {
 }
 
 for fund_name, code in funds.items():
+    amfi = 125497
 
     url = f"https://api.mfapi.in/mf/{code}"
 
@@ -28,3 +29,5 @@ for fund_name, code in funds.items():
     df.to_csv(filename, index=False)
 
     print(f"{fund_name} downloaded successfully")
+
+    

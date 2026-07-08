@@ -29,7 +29,7 @@ https://api.mfapi.in
 
 ## Author
 
-Gopi
+Muppuri Gopi
 
 # Day 2 Deliverables
 
