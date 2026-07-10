@@ -267,13 +267,13 @@ Add screenshots of:
 
 # 👨‍💻 Author
 
-**Gopi Muppuri**
+** Muppuri Gopi **
 
 - Python Developer
 - Data Analyst
 - Power BI Developer
 
-GitHub: *(Add your GitHub profile link here)*
+GitHub: * https://github.com/gopimuppuri*
 
 ---
 
