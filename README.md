@@ -173,32 +173,40 @@ The interactive dashboard consists of four pages:
 
 ### Page 1 – Industry Overview
 
-- Total AUM
-- Total Schemes
+- Total Industry AUM
+- Top Schemes
 - SIP Inflows
-- Folio Count
-- Industry Trends
+- Top Fund House
+- Top10 Fund Houses By Aum
+- Industry Aum Trend
 
 ### Page 2 – Fund Performance
 
-- Risk vs Return Analysis
-- Fund Scorecard
-- NAV vs Benchmark
-- Performance Comparison
+- Performance Risk Analysis
+- Fund Scorecard Table
+- NAV Performance Overtime
+- Fund House
+- Plan
+- Category
 
 ### Page 3 – Investor Analytics
 
-- State-wise Investments
-- Age Group Analysis
+- Transaction Amount By State
+- Monthly Transaction Amount
+- Transaction Count By Age Group
 - Transaction Type Distribution
-- City Tier Analysis
+- City Tier
+- Age Group
+- State
 
 ### Page 4 – SIP & Market Trends
 
-- Monthly SIP Trends
-- Benchmark Trends
-- Category-wise Inflows
-- Market Performance
+- Top 5 categories By Net inflow
+- Category Wise Month Table
+- SIP Inflow vs Nifty 50
+- SIP Accounts Growth By YOY
+-  Category
+  
 
 ---
 
